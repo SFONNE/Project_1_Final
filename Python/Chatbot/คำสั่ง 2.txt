@@ -1,0 +1,10 @@
+{
+"facebook": {
+"quick_replies": [
+{
+"content_type":"user_email"
+    }
+],
+"text": "What's your email?"
+}
+}

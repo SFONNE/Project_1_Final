@@ -1,0 +1,6 @@
+https://developers.facebook.com/docs/messenger-platform/reference/webhook-events/messages?locale=th_TH
+https://stackoverflow.com/questions/58432447/how-to-create-a-facebook-carousel-in-dialogflow-as-custom-payload
+http://www.howtobuildachatbot.com/info/using-python-and-dialogflow-to-create-a-chatbot/more/how-to-set-up-custom-payload-responses-in-dialogflow-intents-via-the-api
+https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies#email
+https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies#email
+https://stackoverflow.com/questions/47918857/multiple-quick-replies-in-dialogflow

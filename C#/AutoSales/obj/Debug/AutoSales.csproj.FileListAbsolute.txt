@@ -1,0 +1,16 @@
+C:\Users\PosIT\Desktop\C#program\AutoSales\AutoSales\AutoSales\bin\Debug\AutoSales.exe.config
+C:\Users\PosIT\Desktop\C#program\AutoSales\AutoSales\AutoSales\bin\Debug\AutoSales.exe
+C:\Users\PosIT\Desktop\C#program\AutoSales\AutoSales\AutoSales\bin\Debug\AutoSales.pdb
+C:\Users\PosIT\Desktop\C#program\AutoSales\AutoSales\AutoSales\obj\Debug\AutoSales.csproj.AssemblyReference.cache
+C:\Users\PosIT\Desktop\C#program\AutoSales\AutoSales\AutoSales\obj\Debug\AutoSales.Form1.resources
+C:\Users\PosIT\Desktop\C#program\AutoSales\AutoSales\AutoSales\obj\Debug\AutoSales.Properties.Resources.resources
+C:\Users\PosIT\Desktop\C#program\AutoSales\AutoSales\AutoSales\obj\Debug\AutoSales.csproj.GenerateResource.cache
+C:\Users\PosIT\Desktop\C#program\AutoSales\AutoSales\AutoSales\obj\Debug\AutoSales.csproj.CoreCompileInputs.cache
+C:\Users\PosIT\Desktop\C#program\AutoSales\AutoSales\AutoSales\obj\Debug\AutoSales.exe
+C:\Users\PosIT\Desktop\C#program\AutoSales\AutoSales\AutoSales\obj\Debug\AutoSales.pdb
+C:\Users\PosIT\Desktop\C#program\AutoSales\AutoSales\AutoSales\bin\Debug\IronPython.dll
+C:\Users\PosIT\Desktop\C#program\AutoSales\AutoSales\AutoSales\bin\Debug\IronPython.Modules.dll
+C:\Users\PosIT\Desktop\C#program\AutoSales\AutoSales\AutoSales\bin\Debug\Newtonsoft.Json.dll
+C:\Users\PosIT\Desktop\C#program\AutoSales\AutoSales\AutoSales\bin\Debug\Microsoft.Scripting.dll
+C:\Users\PosIT\Desktop\C#program\AutoSales\AutoSales\AutoSales\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\PosIT\Desktop\C#program\AutoSales\AutoSales\AutoSales\obj\Debug\AutoSales.csproj.CopyComplete

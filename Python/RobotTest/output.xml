@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211119 00:21:05.369" rpa="false" schemaversion="2">
+<suite id="s1" name="1" source="C:\Users\PosIT\Desktop\Project\RobotTest\1.robot">
+<test id="s1-t1" name="gotogoogle.com">
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>sys.modules['selenium.webdriver.chrome.options'].Options()</arg>
+<arg>sys</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211119 00:21:05.655" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x00000155691C0A90&gt;</msg>
+<status status="PASS" starttime="20211119 00:21:05.655" endtime="20211119 00:21:05.655"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-notifications</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20211119 00:21:05.655" endtime="20211119 00:21:05.655"/>
+</kw>
+<kw name="Create Webdriver" library="Selenium2Library">
+<var>${driver}</var>
+<arg>Chrome</arg>
+<arg>options=${options}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20211119 00:21:05.656" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20211119 00:21:07.181" level="INFO">${driver} = 1</msg>
+<status status="PASS" starttime="20211119 00:21:05.655" endtime="20211119 00:21:07.181"/>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<arg>https://www.google.co.th/?hl=th</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211119 00:21:07.181" level="INFO">Opening url 'https://www.google.co.th/?hl=th'</msg>
+<status status="PASS" starttime="20211119 00:21:07.181" endtime="20211119 00:21:07.910"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211119 00:21:07.910" endtime="20211119 00:21:08.020"/>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<arg>0.4 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20211119 00:21:08.020" endtime="20211119 00:21:08.021"/>
+</kw>
+<status status="PASS" starttime="20211119 00:21:05.654" endtime="20211119 00:21:08.021"/>
+</test>
+<test id="s1-t2" name="gotoFacebook">
+<kw name="Go To" library="Selenium2Library">
+<arg>https://www.facebook.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211119 00:21:08.022" level="INFO">Opening url 'https://www.facebook.com/'</msg>
+<status status="PASS" starttime="20211119 00:21:08.022" endtime="20211119 00:21:09.430"/>
+</kw>
+<status status="PASS" starttime="20211119 00:21:08.021" endtime="20211119 00:21:09.430"/>
+</test>
+<test id="s1-t3" name="loginId">
+<kw name="Input Text" library="Selenium2Library">
+<arg>name=email</arg>
+<arg>${ID}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211119 00:21:09.431" level="INFO">Typing text 'kriengsak_05@hotmail.com' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20211119 00:21:09.431" endtime="20211119 00:21:10.783"/>
+</kw>
+<status status="PASS" starttime="20211119 00:21:09.430" endtime="20211119 00:21:10.783"/>
+</test>
+<test id="s1-t4" name="loginPass">
+<kw name="Input Text" library="Selenium2Library">
+<arg>name=pass</arg>
+<arg>${Pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211119 00:21:10.784" level="INFO">Typing text '-kriengsak030056' into text field 'name=pass'.</msg>
+<status status="PASS" starttime="20211119 00:21:10.784" endtime="20211119 00:21:12.096"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>name=login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211119 00:21:12.096" level="INFO">Clicking button 'name=login'.</msg>
+<status status="PASS" starttime="20211119 00:21:12.096" endtime="20211119 00:21:14.216"/>
+</kw>
+<status status="PASS" starttime="20211119 00:21:10.784" endtime="20211119 00:21:14.216"/>
+</test>
+<test id="s1-t5" name="Postpage">
+<kw name="Go To" library="Selenium2Library">
+<arg>https://www.facebook.com/TestMarket-104244495036936</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211119 00:21:14.217" level="INFO">Opening url 'https://www.facebook.com/TestMarket-104244495036936'</msg>
+<status status="PASS" starttime="20211119 00:21:14.217" endtime="20211119 00:21:19.766"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//div[@class="buofh1pr"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211119 00:21:19.767" level="INFO">Clicking element '//div[@class="buofh1pr"]'.</msg>
+<status status="PASS" starttime="20211119 00:21:19.766" endtime="20211119 00:21:20.816"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211119 00:21:23.823" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211119 00:21:20.816" endtime="20211119 00:21:23.823"/>
+</kw>
+<status status="PASS" starttime="20211119 00:21:14.216" endtime="20211119 00:21:23.823"/>
+</test>
+<test id="s1-t6" name="PressV">
+<kw name="Press Keys" library="Selenium2Library">
+<arg>none</arg>
+<arg>CTRL+v</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211119 00:21:23.825" level="INFO">Sending key(s) ('CTRL+v',) to page.</msg>
+<msg timestamp="20211119 00:21:23.825" level="INFO">Pressing special key CONTROL down.</msg>
+<msg timestamp="20211119 00:21:23.825" level="INFO">Sending key v</msg>
+<msg timestamp="20211119 00:21:23.825" level="INFO">Releasing special key CONTROL.</msg>
+<status status="PASS" starttime="20211119 00:21:23.824" endtime="20211119 00:21:24.284"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//div[@class="rq0escxv l9j0dhe7 du4w35lb j83agx80 pfnyh3mw taijpn5t bp9cbjyn owycx6da btwxx1t3 kt9q3ron ak7q8e6j isp2s0ed ri5dt5u2 rt8b4zig n8ej3o3l agehan2d sk4xxmp2 d1544ag0 tw6a2znq s1i5eluu tv7at329"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211119 00:21:24.284" level="INFO">Clicking element '//div[@class="rq0escxv l9j0dhe7 du4w35lb j83agx80 pfnyh3mw taijpn5t bp9cbjyn owycx6da btwxx1t3 kt9q3ron ak7q8e6j isp2s0ed ri5dt5u2 rt8b4zig n8ej3o3l agehan2d sk4xxmp2 d1544ag0 tw6a2znq s1i5eluu tv7at329"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211119 00:21:26.512" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-27.png"&gt;&lt;img src="selenium-screenshot-27.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211119 00:21:25.927" endtime="20211119 00:21:26.512"/>
+</kw>
+<msg timestamp="20211119 00:21:26.618" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="rq0escxv l9j0dhe7 du4w35lb j83agx80 pfnyh3mw taijpn5t bp9cbjyn owycx6da btwxx1t3 kt9q3ron ak7q8e6j isp2s0ed ri5dt5u2 rt8b4zig n8ej3o3l agehan2d sk4xxmp2 d1544ag0 tw6a2znq s1i5eluu tv7at329"&gt;...&lt;/div&gt; is not clickable at point (968, 686). Other element would receive the click: &lt;div class="ue3kfks5 pw54ja7n uo3d90p7 l82x9zwi ni8dbmo4 stjgntxs ecm0bbzt ph5uu5jm b3onmgus ihqw7lf3 i94ygzvd"&gt;...&lt;/div&gt;
+  (Session info: chrome=96.0.4664.45)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00676903+2517251]
+	Ordinal0 [0x0060F8E1+2095329]
+	Ordinal0 [0x00512848+1058888]
+	Ordinal0 [0x00543509+1258761]
+	Ordinal0 [0x00541868+1251432]
+	Ordinal0 [0x0053F65D+1242717]
+	Ordinal0 [0x0053E4A8+1238184]
+	Ordinal0 [0x00534037+1196087]
+	Ordinal0 [0x005564D3+1336531]
+	Ordinal0 [0x00533A36+1194550]
+	Ordinal0 [0x005565BA+1336762]
+	Ordinal0 [0x00565BBF+1399743]
+	Ordinal0 [0x0055639B+1336219]
+	Ordinal0 [0x005327A7+1189799]
+	Ordinal0 [0x00533609+1193481]
+	GetHandleVerifier [0x00805904+1577972]
+	GetHandleVerifier [0x008B0B97+2279047]
+	GetHandleVerifier [0x00706D09+534521]
+	GetHandleVerifier [0x00705DB9+530601]
+	Ordinal0 [0x00614FF9+2117625]
+	Ordinal0 [0x006198A8+2136232]
+	Ordinal0 [0x006199E2+2136546]
+	Ordinal0 [0x00623541+2176321]
+	BaseThreadInitThunk [0x7674FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x770B7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x770B7A6E+238]
+</msg>
+<status status="FAIL" starttime="20211119 00:21:24.284" endtime="20211119 00:21:26.619"/>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<arg>0.4 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20211119 00:21:26.619" endtime="20211119 00:21:26.620"/>
+</kw>
+<status status="FAIL" starttime="20211119 00:21:23.824" endtime="20211119 00:21:26.620">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="rq0escxv l9j0dhe7 du4w35lb j83agx80 pfnyh3mw taijpn5t bp9cbjyn owycx6da btwxx1t3 kt9q3ron ak7q8e6j isp2s0ed ri5dt5u2 rt8b4zig n8ej3o3l agehan2d sk4xxmp2 d1544ag0 tw6a2znq s1i5eluu tv7at329"&gt;...&lt;/div&gt; is not clickable at point (968, 686). Other element would receive the click: &lt;div class="ue3kfks5 pw54ja7n uo3d90p7 l82x9zwi ni8dbmo4 stjgntxs ecm0bbzt ph5uu5jm b3onmgus ihqw7lf3 i94ygzvd"&gt;...&lt;/div&gt;
+  (Session info: chrome=96.0.4664.45)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00676903+2517251]
+	Ordinal0 [0x0060F8E1+2095329]
+	Ordinal0 [0x00512848+1058888]
+	Ordinal0 [0x00543509+1258761]
+	Ordinal0 [0x00541868+1251432]
+	Ordinal0 [0x0053F65D+1242717]
+	Ordinal0 [0x0053E4A8+1238184]
+	Ordinal0 [0x00534037+1196087]
+	Ordinal0 [0x005564D3+1336531]
+	Ordinal0 [0x00533A36+1194550]
+	Ordinal0 [0x005565BA+1336762]
+	Ordinal0 [0x00565BBF+1399743]
+	Ordinal0 [0x0055639B+1336219]
+	Ordinal0 [0x005327A7+1189799]
+	Ordinal0 [0x00533609+1193481]
+	GetHandleVerifier [0x00805904+1577972]
+	GetHandleVerifier [0x008B0B97+2279047]
+	GetHandleVerifier [0x00706D09+534521]
+	GetHandleVerifier [0x00705DB9+530601]
+	Ordinal0 [0x00614FF9+2117625]
+	Ordinal0 [0x006198A8+2136232]
+	Ordinal0 [0x006199E2+2136546]
+	Ordinal0 [0x00623541+2176321]
+	BaseThreadInitThunk [0x7674FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x770B7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x770B7A6E+238]
+</status>
+</test>
+<status status="FAIL" starttime="20211119 00:21:05.371" endtime="20211119 00:21:26.621"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="1" skip="0" id="s1" name="1">1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
